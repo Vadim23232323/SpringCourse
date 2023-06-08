@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+    <bean id="musicBean"
+          class="by.dubovskiy.springcourse.RapMusic">
+    </bean>
+
+    <bean id="musicRockBean"
+          class="by.dubovskiy.springcourse.RockMusic">
+    </bean>
+
+    <!--    Init, Destroy, Factory метод-->
+    <bean id="musicClasscalBean"
+          class="by.dubovskiy.springcourse.ClassicalMusic"
+          init-method="myInit"
+          destroy-method="myDestroy"
+          factory-method="getClassicalMusic">
+    </bean>
+
+    <!--Внедрение зависимости через конструктор-->
+    <!--    <bean id="musicPlayer"-->
+    <!--          class="by.dubovskiy.springcourse.MusicPlayer">-->
+    <!--        <constructor-arg ref="musicBean"/>-->
+    <!--    </bean>-->
+
+    <!--Внедрение зависимости через seter и внедрение значений-->
+<!--        <bean id="musicPlayer"-->
+<!--              class="by.dubovskiy.springcourse.MusicPlayer">-->
+<!--            <property name="music" ref="musicBean"/>-->
+<!--            <property name="name" value="Баста"/>-->
+<!--            <property name="volume" value="50"/>-->
+<!--        </bean>-->
+
+    <!--Внедрение значений из файла-->
+<!--    <bean id="musicPlayer"-->
+<!--              class="by.dubovskiy.springcourse.MusicPlayer">-->
+<!--            <property name="music" ref="musicBean"/>-->
+<!--            <property name="name" value="${musicPlayer.name}"/>-->
+<!--            <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--        <property name="musicList">-->
+<!--            <list>-->
+<!--                <ref bean="musicBean"/>-->
+<!--                <ref bean="musicRockBean"/>-->
+<!--                <ref bean="musicClasscalBean"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        </bean>    -->
+
+
+    <!--Scope - задает как spring создаст bean (singleton | prototype)-->
+<!--    <bean id="musicPlayer"-->
+<!--              class="by.dubovskiy.springcourse.MusicPlayer"-->
+<!--                scope="prototype">-->
+<!--            <property name="music" ref="musicBean"/>-->
+<!--            <property name="name" value="${musicPlayer.name}"/>-->
+<!--            <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--        <property name="musicList">-->
+<!--            <list>-->
+<!--                <ref bean="musicBean"/>-->
+<!--                <ref bean="musicRockBean"/>-->
+<!--                <ref bean="musicClasscalBean"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        </bean>-->
+
+
+</beans>
