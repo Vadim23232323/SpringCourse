@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lesson4.SpringAnnotations" />
+        <module name="Lesson4.SpringAnnotations_2" />
+        <module name="Lesson2.FirstIoCApp" />
+        <module name="Lesson3.DependencyInjection" />
+        <module name="Lesson1.FirstApplication" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
