@@ -1,4 +1,4 @@
-package by.dubovskiy.springcourse;
+package by.dubovskiy.springcourse.MusicGenres;
 
 public enum MusicGenres {
     CLASSICAL_MUSIC,
