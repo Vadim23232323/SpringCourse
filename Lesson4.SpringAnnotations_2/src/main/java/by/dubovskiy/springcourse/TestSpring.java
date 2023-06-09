@@ -1,5 +1,6 @@
 package by.dubovskiy.springcourse;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.lang.reflect.Member;
@@ -17,9 +18,10 @@ public class TestSpring {
 
         MusicPlayer musicPlayer = context.getBean("musicPlayerBean", MusicPlayer.class);
 
-        System.out.println("Громкость - " + musicPlayer.getVolume() + " %");
+       System.out.println("Громкость - " + musicPlayer.getVolume() + " %");
 
-        context.close();
+       context.close();
+
 
     }
 }
