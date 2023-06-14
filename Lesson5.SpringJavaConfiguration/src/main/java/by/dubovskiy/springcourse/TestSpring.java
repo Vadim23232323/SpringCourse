@@ -1,15 +1,12 @@
 package by.dubovskiy.springcourse;
-
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.lang.reflect.Member;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
 
         // ------------------------Класс Computer внедрение зависимости через аннотацию @Qualifier --------------------
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
         Computer computer = context.getBean("computer", Computer.class);
 

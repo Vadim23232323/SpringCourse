@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lesson4.SpringAnnotations" />
+        <module name="Lesson5.SpringJavaConfiguration" />
         <module name="Lesson4.SpringAnnotations_2" />
         <module name="Lesson2.FirstIoCApp" />
         <module name="Lesson3.DependencyInjection" />
