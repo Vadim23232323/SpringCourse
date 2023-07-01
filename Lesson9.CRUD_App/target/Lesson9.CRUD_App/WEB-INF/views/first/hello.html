@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+Hello!
+
+<a href="/first/goodbye">Say goodbye</a> or <a href="/exit">Exit</a>
+or <a href="/first/hello?name=Vadim&surname=Dubovskiy">Request with parametrs</a>
+or <a href="/first/calculator?a=2&b=2&action=multiplication">Multiplication 2X2</a>
+<p th:text="${message}"></p>
+</body>
+</html>
