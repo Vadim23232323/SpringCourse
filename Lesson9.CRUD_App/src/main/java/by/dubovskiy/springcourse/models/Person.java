@@ -6,6 +6,10 @@ public class Person {
         this.name = name;
     }
 
+    public  Person(){
+
+    }
+
     private  int id;
     private String name;
 

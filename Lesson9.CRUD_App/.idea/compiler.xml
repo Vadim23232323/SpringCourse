@@ -10,6 +10,7 @@
         <module name="Lesson6.SpringMVCApp" />
         <module name="Lesson7.SpringControllersIntro" />
         <module name="spring-crud-app1" />
+        <module name="Lesson9.CRUD_App" />
       </profile>
     </annotationProcessing>
   </component>
