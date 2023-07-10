@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lesson6.SpringMVCApp" />
+        <module name="Lesson11.SpringJDBC" />
+        <module name="Lesson7.SpringControllersIntro" />
+        <module name="spring-crud-app1" />
+        <module name="Lesson8.IntroToModel" />
+        <module name="Lesson10.SpringFormsValidation" />
+        <module name="Lesson9.CRUD_App" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
